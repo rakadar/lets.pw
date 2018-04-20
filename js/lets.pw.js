@@ -26,8 +26,11 @@ function generatePassword() {
         retVal += charset.charAt(Math.floor(Math.random() * n));
     }
 	
-	$('#pwOutput').val(retVal);
-	//$('#pwOutput').select();
+    $('#pwOutput').val(retVal);
+	
+	if ($("checkCopy" ).prop('checked')) {
+		copyTextToClipboard($('#pwOutput').val());
+	}
 	
     return retVal;
 }
