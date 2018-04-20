@@ -28,8 +28,8 @@ function generatePassword() {
 	
     $('#pwOutput').val(retVal);
 	
-	if ($("checkCopy" ).prop('checked')) {
-		copyTextToClipboard(retVal);
+	if ($("#checkCopy" ).prop('checked')) {
+		alert('copy');
 	}
 	
     return retVal;
