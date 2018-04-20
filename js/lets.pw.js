@@ -29,7 +29,7 @@ function generatePassword() {
     $('#pwOutput').val(retVal);
 	
 	if ($("checkCopy" ).prop('checked')) {
-		copyTextToClipboard($('#pwOutput').val());
+		copyTextToClipboard(retVal);
 	}
 	
     return retVal;
